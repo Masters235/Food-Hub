@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paradise Online Food Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff5722;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      padding: 14px 20px;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    .content {
+      padding: 20px;
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    img.menu-img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border: 2px solid #ccc;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+      color: #2196F3;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PARADISE Online FOOD HUB</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('shop')">Shop</a>
+    <a href="#" onclick="showSection('contact')">Contacts</a>
+  </nav>
+
+  <div id="home" class="content active">
+    <h2>Welcome to Paradise Online Food Hub!</h2>
+    <p>We serve delicious Kota, fresh chips, and refreshing drinks delivered to your door.</p>
+  </div>
+
+  <div id="about" class="content">
+    <h2>About Us</h2>
+    <p>Paradise Food Hub is your local food solution. We are passionate about tasty food and quality service. We prepare meals with love and deliver them fresh and hot!</p>
+  </div>
+
+  <div id="shop" class="content">
+    <h2>Our Menu</h2>
+    <p>Check out our delicious offerings below. Order easily via WhatsApp or follow us on Facebook!</p>
+
+    <!-- Replace with your real image URL -->
+    <img src="https://via.placeholder.com/500x300.png?text=Menu+Photo+Here" alt="Menu" class="menu-img">
+
+    <div class="social-links">
+      <p>Order Now:</p>
+      <a href="https://wa.me/1234567890" target="_blank">WhatsApp Us</a>
+      <a href="https://facebook.com/ParadiseFoodHub" target="_blank">Facebook Page</a>
+    </div>
+  </div>
+
+  <div id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>Email: paradisefoodhub@example.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Location: YourTown, South Africa</p>
+  </div>
+
+  <footer>
+    Paradise Food Hub
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.content');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
